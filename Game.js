@@ -1,43 +1,46 @@
 var antwoord;
 
-antwoord=prompt("Open de kasteeldeur");
+antwoord=prompt("Open de kasteel deur");
 
 if(antwoord=="ja"){
-    document.write("Je hebt de kasteel deur geopend<br>");
     antwoord=prompt("Pak het zwaard");
-    console.log("Open de kasteel deur");
+    console.log("Pak het zwaard");
     if(antwoord=="ja"){
-        document.write("Je hebt het zwaar gepakt<br>");
-        console.log("Pak het zwaard");
-    }
-    else{
-        document.write("Je hebt het zwaard niet opgepakt<br>");
+        document.write("Je hebt het zwaard gepakt<br>");
         antwoord=prompt("Vecht met de ridder");
         console.log("Vecht met de ridder");
         if(antwoord=="ja"){
-            document.write("Je bent vermoord door de ridder<br>");
-        }
-    }
-    if(antwoord=="ja"){
-        antwoord=prompt("Vecht met de ridder");
-        document.write("Je hebt de ridder verslagen<br>");
-        console.log("Gevochten met de ridder");
+            document.write("Je hebt gevochten met de ridder<br>");
+            document.write("Je hebt de ridder verslagen<br>");
+            console.log("Je hebt de ridder verslagen");
         }
         else{
-            antwoord=prompt("Vlucht het kasteel uit ");
-            document.write("Je bent uit het kasteel gevlucht<br>");
-            console.log("Vlucht het kasteel uit");
-
+            antwoord=prompt("Sluip voorbij de ridder")
+            console.log("Sluip voorbij de ridder");
             if(antwoord=="ja"){
-            document.write("Je bent veilig uit het kasteel ontsnapt<br>");
+            document.write("Je bent betrapt door de ridder en opgepakt<br>");
+            console.log("Je bent betrapt door de ridder en opgepakt");
             }
             else{
-                document.write("Je bent niet uit het kasteel gevlucht<br>")
-                document.write("Je bent door de ridder opgepakt<br>");
+                document.write("Je hebt succesvol het kasteel verlaten");
             }
-    
+        }
+    }
+    else{
+        antwoord=prompt("Vecht met de ridder");
+        console.log("Vecht met de ridder");
+        if(antwoord=="ja"){
+            document.write("Je hebt het zwaard niet gepakt<br>");
+            document.write("Je bent gaan vechten met de ridder<br>");
+            document.write("Je bent vermoord door de ridder<br>");
+            console.log("Je bent vermoord door de ridder");
+        } 
+        else{
+        document.write("Je bent niet gaan vechten met de ridder<br>");
+        document.write("Je bent voorbij de ridder geslopen en hebt het kasteel bereikt<br>");
+        console.log("Je bent voorbij de ridder geslopen en hebt het kasteel bereikt");
         
-
+}
 }
 }else{
     document.write("Je bent niet door de deur gegaan<br>");
@@ -71,4 +74,3 @@ if(antwoord=="ja"){
         document.write("Het is je niet gelukt om in het kasteel te komen<br>");
         }
         }
-    
