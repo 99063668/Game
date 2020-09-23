@@ -1,6 +1,9 @@
 var antwoord;
+var vraag = 3;
+console.log("var vraag = " + vraag);
 
 antwoord=prompt("Open de kasteel deur");
+
 
 if(antwoord=="ja"){
     antwoord=prompt("Pak het zwaard");
@@ -15,14 +18,14 @@ if(antwoord=="ja"){
             console.log("Je hebt de ridder verslagen");
         }
         else{
-            antwoord=prompt("Sluip voorbij de ridder")
+            antwoord=prompt("Sluip voorbij de ridder");
             console.log("Sluip voorbij de ridder");
             if(antwoord=="ja"){
             document.write("Je bent betrapt door de ridder en opgepakt<br>");
             console.log("Je bent betrapt door de ridder en opgepakt");
             }
             else{
-                document.write("Je hebt succesvol het kasteel verlaten");
+                document.write("Je hebt succesvol het kasteel verlaten<br>");
             }
         }
     }
@@ -40,8 +43,8 @@ if(antwoord=="ja"){
         document.write("Je bent voorbij de ridder geslopen en hebt het kasteel bereikt<br>");
         console.log("Je bent voorbij de ridder geslopen en hebt het kasteel bereikt");
         
-}
-}
+        }
+    }
 }else{
     document.write("Je bent niet door de deur gegaan<br>");
     antwoord=prompt("Klim over de muur heen");
@@ -72,5 +75,16 @@ if(antwoord=="ja"){
     else{
         document.write("Je bent niet over de muur geklommen<br>");
         document.write("Het is je niet gelukt om in het kasteel te komen<br>");
+        console.log("Niet over de muur geklommen");
+        console.log("Niet het kasteel binnen gekomen");
+        
+        vraag=prompt("Hoe vaak heb je de game gespeeld?");
+    
+        if(vraag >= 3){
+            document.write("Speel de game gerust nog een keer<br>");
         }
+        else{
+            document.write("Speel de game nog eens voor een ander einde<br>");
         }
+    }
+}
