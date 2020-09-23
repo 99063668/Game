@@ -37,6 +37,17 @@ if(antwoord=="ja"){
             document.write("Je bent gaan vechten met de ridder<br>");
             document.write("Je bent vermoord door de ridder<br>");
             console.log("Je bent vermoord door de ridder");
+
+            vraag=prompt("Hoe vaak heb je de game gespeeld?");
+    
+        if(vraag <= 3){
+            document.write("Je kan de game gerust nog een keer spelen<br>");
+            console.log("Je kan de game gerust nog een keer spelen");
+        }
+        else{
+            document.write("Speel de game nog een keer voor een ander einde<br>");
+            console.log("Speel de game nog een keer voor een ander einde");
+        }
         } 
         else{
         document.write("Je bent niet gaan vechten met de ridder<br>");
@@ -45,7 +56,8 @@ if(antwoord=="ja"){
         
         }
     }
-}else{
+}
+else{
     document.write("Je bent niet door de deur gegaan<br>");
     antwoord=prompt("Klim over de muur heen");
     console.log("Klim over de muur heen");
@@ -82,9 +94,11 @@ if(antwoord=="ja"){
     
         if(vraag >= 3){
             document.write("Speel de game gerust nog een keer<br>");
+            console.log("Speel de game gerust nog een keer");
         }
         else{
             document.write("Speel de game nog eens voor een ander einde<br>");
+            console.log("Speel de game nog eens voor een ander einde");
         }
     }
 }
