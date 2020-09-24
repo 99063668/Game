@@ -45,8 +45,8 @@ if(antwoord=="ja"){
             console.log("Je kan de game gerust nog een keer spelen");
         }
         else{
-            document.write("Speel de game nog een keer voor een ander einde<br>");
-            console.log("Speel de game nog een keer voor een ander einde");
+            document.write("Speel de game nog een keer voor een andere uitkomst<br>");
+            console.log("Speel de game nog een keer voor een andere uitkomst");
         }
         } 
         else{
